@@ -17,7 +17,7 @@ Further scripts of core functionalities located in the main directory are the fo
 
 `processTGCalculation.m`: main program function, where program parameters are provided as inputs along with several supporting functions. Can be used separatelly by providing correct input data structures with command `some_result = processTGCalculation(grating, pump, pulse, sample, sys, io);`' in command window.
 
-##Structures description:  
+### Structures description:  
 * `grating` structure contains following fields  
 	* `slit`:				grating slit form factor and transmission type description  
 	* `p`:					period of the grating parameter  
