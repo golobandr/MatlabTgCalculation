@@ -16,32 +16,34 @@ Further scripts of core functionalities located in the main directory are the fo
 `TGCalc.m`: main script used for reading input data files and forming MATLAB structures that are used as input parameters for simulations.
 
 `processTGCalculation.m`: main program function, where program parameters are provided as inputs along with several supporting functions. Can be used separatelly by providing correct input data structures with command `some_result = processTGCalculation(grating, pump, pulse, sample, sys, io);`' in command window.
-  `grating` structure contains following fields
-    `slit`:       grating slit form factor and transmission type description
-    `p`:          period of the grating parameter
-    `df`:         grating duty factor
-  `pump` and `probe` structures contain following fields
-    `pd`:         grating phase depth
-    `angle`:      incidence angle
-    `wfc`:        wavefront curvature
-    `waist`:      Gaussian beam inverted radius
-    `lambda`:     wavelength
-    `intensity`:  beam intensity
-  `sample` structure contains following fields
-    `t`:          sample thickness
-    `n2`:         nonlinear complex refractive index
-  `sys` structure contains following fields
-    `g2s`:        grating to sample distance
-    `ff`:         grating to PSD distance
-    `psd`:        measurement aperture of PSD
-    `ds`:         lateral coordinate separation
-    `dsdp`:       division parameter for sys.ds
-  `io` structure contains following fields
-    `ddp`:        indicator used to save internal data
-    `sdp`:        indicator used to save generated figures
-    `wd`:         working path
-    `filename`:   path to output file
-    `i`:          additional information name parameter
+
+Structures description:  
+  `grating` structure contains following fields  
+    `slit`:       grating slit form factor and transmission type description  
+    `p`:          period of the grating parameter  
+    `df`:         grating duty factor  
+  `pump` and `probe` structures contain following fields  
+    `pd`:         grating phase depth  
+    `angle`:      incidence angle  
+    `wfc`:        wavefront curvature  
+    `waist`:      Gaussian beam inverted radius  
+    `lambda`:     wavelength  
+    `intensity`:  beam intensity  
+  `sample` structure contains following fields  
+    `t`:          sample thickness  
+    `n2`:         nonlinear complex refractive index  
+  `sys` structure contains following fields  
+    `g2s`:        grating to sample distance  
+    `ff`:         grating to PSD distance  
+    `psd`:        measurement aperture of PSD  
+    `ds`:         lateral coordinate separation  
+    `dsdp`:       division parameter for sys.ds  
+  `io` structure contains following fields  
+    `ddp`:        indicator used to save internal data  
+    `sdp`:        indicator used to save generated figures  
+    `wd`:         working path  
+    `filename`:   path to output file  
+    `i`:          additional information name parameter  
 
 visualizeTGResult.m: a script that includes sample routines for displaying the calculated results. Can be used separatly by running `visualizeTGResult(result);' command in command window after loading result of calculation *.mat file. Note, that result structure is created by TGCalc script.
 
